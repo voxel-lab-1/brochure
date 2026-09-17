@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="dark">
+<html lang="es" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -841,7 +841,7 @@
     <div class="brand">
       <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="64" height="64" rx="16" fill="var(--surface)" stroke="var(--hairline-lit)" stroke-width="2.5"/>
-        <path d="M16 44V20L28 34L40 20V44" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 44V20L28 34L40 20V44" stroke="var(--fg)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
         <circle cx="48" cy="20" r="5.5" fill="#FF5E3A"/>
       </svg>
       <span>Miguel Muñoz</span><span class="dot">.</span>
@@ -1228,7 +1228,7 @@
   const themeBtn = document.getElementById('theme-btn');
   const themeText = document.getElementById('theme-text');
 
-  const savedTheme = localStorage.getItem('theme') || 'dark';
+  const savedTheme = localStorage.getItem('theme') || 'light';
   setTheme(savedTheme);
 
   themeBtn.addEventListener('click', () => {
