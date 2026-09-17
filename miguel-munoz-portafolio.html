@@ -827,6 +827,119 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* Mobile Responsive Optimizations (<768px & <900px) */
+  @media (max-width: 900px) {
+    .project-row {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 24px 0;
+    }
+    .project-row .dash { display: none; }
+    .project-row .thumb {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+    .chapter-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Hide desktop-only elements that crowd mobile */
+    .thread__line { display: none; }
+    nav.top-nav { display: none; }
+    .rail { display: none; }
+
+    /* Topbar compact layout */
+    header.topbar .bar {
+      padding: 12px 1rem;
+    }
+    .brand {
+      font-size: 18px;
+      white-space: nowrap;
+    }
+    .actions-right {
+      gap: 8px;
+    }
+    .actions-right .cta-pill {
+      padding: 8px 14px;
+      font-size: 12px;
+    }
+
+    /* Hero section breathing room */
+    .hero-section {
+      padding-top: max(2rem, 6vh);
+      padding-bottom: 3rem;
+    }
+    .hero-content h1 {
+      font-size: clamp(1.75rem, 7.5vw, 2.4rem);
+      line-height: 1.2;
+    }
+    .hero-content .lead {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .hero-ctas {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+    .btn-primary, .btn-ghost {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .meta-row {
+      gap: 18px;
+      flex-direction: column;
+      margin-top: 32px;
+      padding-top: 20px;
+    }
+
+    /* Horizontal scroll for category filter chips */
+    .thread-filters {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .thread-filters::-webkit-scrollbar { display: none; }
+
+    /* Services list */
+    .service-row {
+      grid-template-columns: 1fr;
+      gap: 8px;
+      padding: 20px 0;
+    }
+
+    /* Floating bottom navigation pill */
+    .pill-nav {
+      bottom: 14px;
+      max-width: 92vw;
+      padding: 4px 8px;
+      gap: 4px;
+      justify-content: space-around;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+    .pill-nav a, .pill-nav button {
+      height: 32px;
+      padding-inline: 8px;
+      font-size: 10.5px;
+    }
+
+    /* Prevent bottom overlap */
+    footer {
+      padding-bottom: 100px;
+      flex-direction: column;
+      text-align: center;
+      gap: 8px;
+    }
+  }
 </style>
 </head>
 <body>
