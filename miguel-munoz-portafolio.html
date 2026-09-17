@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Miguel Muñoz · Growth, Contenido & Ecommerce B2C</title>
+<title>Miguel Muñoz · Brochure</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%230B0C10'/><path d='M16 44V20L28 34L40 20V44' stroke='%23FF5E3A' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/><circle cx='48' cy='20' r='5' fill='%2310B981'/></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -151,6 +152,15 @@
     font-weight: 800;
     font-size: 20px;
     letter-spacing: -0.01em;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .brand-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    border-radius: 8px;
   }
   .brand .dot { color: var(--accent); }
 
@@ -824,7 +834,14 @@
 <!-- Topbar -->
 <header class="topbar">
   <div class="bar">
-    <div class="brand">Miguel Muñoz<span class="dot">.</span></div>
+    <div class="brand">
+      <svg class="brand-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="64" height="64" rx="16" fill="var(--surface)" stroke="var(--hairline-lit)" stroke-width="2.5"/>
+        <path d="M16 44V20L28 34L40 20V44" stroke="var(--accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="48" cy="20" r="5.5" fill="var(--c-ecom)"/>
+      </svg>
+      <span>Miguel Muñoz</span><span class="dot">.</span>
+    </div>
     <nav class="top-nav">
       <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
@@ -844,7 +861,7 @@
   <canvas id="hero-waves"></canvas>
   
   <div class="shell hero-content">
-    <div class="eyebrow reveal"><span class="dot"></span>Growth &middot; Contenido &middot; Ecommerce B2C</div>
+    <div class="eyebrow reveal"><span class="dot"></span>Miguel Muñoz . Brochure</div>
 
     <h1 class="reveal">Sitios y tiendas que <em>venden</em>,<br>contenido que conecta.</h1>
 
@@ -880,32 +897,32 @@
           <div class="service-row reveal">
             <div class="num">01</div>
             <div>
-              <h3>Ecommerce y sitios a la medida</h3>
-              <p>Tiendas Shopify y sitios propios, diseñados para el catálogo y el comprador reales de cada marca, no para una plantilla genérica.</p>
+              <h3>Ecommerce &amp; Tiendas de Alta Conversión</h3>
+              <p>Desarrollo de tiendas Shopify y plataformas e-commerce a la medida con arquitectura orientada a la venta, velocidad móvil superior y experiencia de checkout optimizada.</p>
             </div>
             <div class="tag">Web / Ecommerce</div>
           </div>
           <div class="service-row reveal">
             <div class="num">02</div>
             <div>
-              <h3>Software y aplicaciones a la medida</h3>
-              <p>CRMs, plataformas de registro y herramientas internas para negocios que necesitan algo más específico que un sitio informativo.</p>
+              <h3>Software, CRMs &amp; Plataformas a la Medida</h3>
+              <p>Construcción de software web, paneles de administración, CRMs y herramientas operativas adaptadas exactamente a los flujos y necesidades únicas de tu negocio.</p>
             </div>
             <div class="tag">Software</div>
           </div>
           <div class="service-row reveal">
             <div class="num">03</div>
             <div>
-              <h3>Contenido para Instagram y TikTok</h3>
-              <p>Piezas y calendarios de contenido pensados para el consumidor B2C, alineados con las decisiones reales de compra.</p>
+              <h3>Estrategia de Contenido &amp; Viralidad B2C</h3>
+              <p>Producción audiovisual, guiones estratégicos y calendarios editoriales para Instagram y TikTok diseñados para captar atención, generar autoridad y activar compras.</p>
             </div>
             <div class="tag">Contenido</div>
           </div>
           <div class="service-row reveal">
             <div class="num">04</div>
             <div>
-              <h3>Pauta, analítica y operación con IA</h3>
-              <p>Campañas en Meta Ads y TikTok Ads, seguimiento de funnels de conversión y procesos internos apoyados en herramientas de IA.</p>
+              <h3>Growth Marketing, Ads &amp; Operación con IA</h3>
+              <p>Estrategia de pauta digital en Meta Ads y TikTok Ads, analítica de embudos de conversión e integración de herramientas de Inteligencia Artificial para acelerar procesos.</p>
             </div>
             <div class="tag">Growth</div>
           </div>
